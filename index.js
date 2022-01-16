@@ -5,30 +5,39 @@ const imagen4 = document.getElementById("canvas-4");
 const imagen5 = document.getElementById("canvas-5");
 const imagen6 = document.getElementById("canvas-6");
 
+$('#slide-1').slideDown();
+$('#slide-2').slideUp();
+$('#slide-3').slideUp();
+$('#slide-4').slideUp();
+$('#slide-5').slideUp();
+$('#slide-6').slideUp();
+
+
+
+
+
 //imagen1.style.background='blue';
 var puntero=1;
 
 if(puntero===1){
-    imagen1.style.background='blue';
-    imagen1.classList.add('imgs')
+    $('#slide-1').slideDown();
 }
 
 let movdown=document.addEventListener('keydown', (event)=>{
     
     if(puntero===1){
-        imagen1.style.background='blue';
         switch(event.keyCode){
             case 39:
-                imagen1.classList.remove('imgs')
-                imagen2.classList.add('imgs')
+                $('#slide-1').slideUp();
+                $('#slide-2').slideDown();
                 console.log("Derecha")
                 puntero=2;
                 console.log(puntero)
             break;
 
             case 40:
-                imagen1.classList.remove('imgs')
-                imagen4.classList.add('imgs')
+                $('#slide-1').slideUp();
+                $('#slide-4').slideDown();
                 console.log("Abajo")
                 puntero=4;
                 console.log(puntero)
@@ -38,24 +47,24 @@ let movdown=document.addEventListener('keydown', (event)=>{
         if(puntero===2){
             switch(event.keyCode){
                 case 37:
-                    imagen2.classList.remove('imgs')
-                    imagen1.classList.add('imgs')
+                    $('#slide-2').slideUp();
+                    $('#slide-1').slideDown();
                     console.log("Izquierda")
                     puntero=1;
                     console.log(puntero)
                 break;
     
                 case 39:
-                    imagen2.classList.remove('imgs')
-                    imagen3.classList.add('imgs')
+                    $('#slide-2').slideUp();
+                    $('#slide-3').slideDown();
                     console.log("Derecha")
                     puntero=3;
                     console.log(puntero)
                 break;
     
                 case 40:
-                    imagen2.classList.remove('imgs')
-                    imagen5.classList.add('imgs')
+                    $('#slide-2').slideUp();
+                    $('#slide-5').slideDown();
                     console.log("Abajo")
                     puntero=5;
                     console.log(puntero)
@@ -65,16 +74,16 @@ let movdown=document.addEventListener('keydown', (event)=>{
             if(puntero===3){
                 switch(event.keyCode){
                     case 37:
-                        imagen3.classList.remove('imgs')
-                        imagen2.classList.add('imgs')
+                        $('#slide-3').slideUp();
+                        $('#slide-2').slideDown();
                         console.log("Izquierda")
                         puntero=2;
                         console.log(puntero)
                     break;
         
                     case 40:
-                        imagen3.classList.remove('imgs')
-                        imagen6.classList.add('imgs')
+                        $('#slide-3').slideUp();
+                        $('#slide-6').slideDown();
                         console.log("Abajo")
                         puntero=6;
                         console.log(puntero)
@@ -84,16 +93,16 @@ let movdown=document.addEventListener('keydown', (event)=>{
                 if(puntero===4){
                     switch(event.keyCode){
                         case 38:
-                            imagen4.classList.remove('imgs')
-                            imagen1.classList.add('imgs')
+                            $('#slide-4').slideUp();
+                            $('#slide-1').slideDown();
                             console.log("Arriba")
                             puntero=1;
                             console.log(puntero)
                         break;
             
                         case 39:
-                            imagen4.classList.remove('imgs')
-                            imagen5.classList.add('imgs')
+                            $('#slide-4').slideUp();
+                            $('#slide-5').slideDown();
                             console.log("Derecha")
                             puntero=5;
                             console.log(puntero)
@@ -103,23 +112,23 @@ let movdown=document.addEventListener('keydown', (event)=>{
                     if(puntero===5){
                         switch(event.keyCode){
                             case 37:
-                                imagen5.classList.remove('imgs')
-                                imagen4.classList.add('imgs')
+                                $('#slide-5').slideUp();
+                                $('#slide-4').slideDown();
                                 console.log("Izquierda")
                                 puntero=4;
                                 console.log(puntero)
                             break;
                             case 38:
-                                imagen5.classList.remove('imgs')
-                                imagen2.classList.add('imgs')
+                                $('#slide-5').slideUp();
+                                $('#slide-2').slideDown();
                                 console.log("Arriba")
                                 puntero=2;
                                 console.log(puntero)
                             break;
                 
                             case 39:
-                                imagen5.classList.remove('imgs')
-                                imagen6.classList.add('imgs')
+                                $('#slide-5').slideUp();
+                                $('#slide-6').slideDown();
                                 console.log("Derecha")
                                 puntero=6;
                                 console.log(puntero)
@@ -129,15 +138,15 @@ let movdown=document.addEventListener('keydown', (event)=>{
                         if(puntero===6){
                             switch(event.keyCode){
                                 case 37:
-                                    imagen6.classList.remove('imgs')
-                                    imagen5.classList.add('imgs')
+                                    $('#slide-6').slideUp();
+                                    $('#slide-5').slideDown();
                                     console.log("Izquierda")
                                     puntero=5;
                                     console.log(puntero)
                                 break;
                                 case 38:
-                                    imagen6.classList.remove('imgs')
-                                    imagen3.classList.add('imgs')
+                                    $('#slide-6').slideUp();
+                                    $('#slide-3').slideDown();
                                     console.log("Arriba")
                                     puntero=3;
                                     console.log(puntero)

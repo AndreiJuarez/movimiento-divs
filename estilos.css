@@ -6,24 +6,36 @@
 .contenedor{
     margin-top: 10px;
     margin-left: 50px;
+    padding: auto;
     width: 1000px;
     height: 900px;
     border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .imagen{
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
     background-color: red;
     display: inline-block;
     margin: 20px;
 }
 
 img{
-    margin: 10px;
+    margin: 13px;
+    margin-left: 13px;
+
 }
 
-.imgs{
-    height: 300px;
-    width: 300px;
+
+.slide{
+    width: 280px;
+    height: 100px;
+    text-align: center;
+    background: rgba(77, 77, 77, 0.9);
+    position: relative;
+    color: white;
+    top: -102px;
 }
