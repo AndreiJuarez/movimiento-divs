@@ -6,7 +6,7 @@
 .contenedor{
     margin-top: 10px;
     margin-left: 50px;
-    width: 900px;
+    width: 1000px;
     height: 900px;
     border: 1px solid red;
 }
@@ -17,4 +17,13 @@
     background-color: red;
     display: inline-block;
     margin: 20px;
+}
+
+img{
+    margin: 10px;
+}
+
+.imgs{
+    height: 300px;
+    width: 300px;
 }
