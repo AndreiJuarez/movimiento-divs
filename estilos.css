@@ -18,7 +18,7 @@
 .imagen{
     width: 280px;
     height: 280px;
-    background-color: red;
+    background-color: rgb(117, 36, 36);
     display: inline-block;
     margin: 20px;
 }
